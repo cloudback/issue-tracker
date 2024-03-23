@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+    - master
+name: $(Date:yyyy).$(Date:MM).$(Date:dd).$(BuildID)-$(Build.SourceBranchName)
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: master
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    name: default
+  steps:
+  - script: echo Tracker!
+    displayName: 'Tracker'
