@@ -1,3 +1,5 @@
+[![Build Status](https://app.cloudback.it/badge/cloudback/issue-tracker)](https://cloudback.it)
+
 # Cloudback Issue Tracker
 
 User-reported issues for Cloudback. Need a new feature? Want to submit a bug report? You are at the right place!
